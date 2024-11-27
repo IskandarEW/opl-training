@@ -1,0 +1,37 @@
+name: opl_theme
+type: theme
+'base theme': olivero
+version: 1.0.0
+libraries:
+  - opl_theme/base
+  - opl_theme/tailwindcss
+  - opl_theme/messages
+  - core/normalize
+regions:
+  header: Header
+  primary_menu: Primary menu
+  secondary_menu: Secondary menu
+  hero: Hero (full width)
+  highlighted: Highlighted
+  breadcrumb: Breadcrumb
+  social: Social Bar
+  content_above: Content Above
+  content: Content
+  sidebar: Sidebar
+  content_below: Content Below
+  footer_top: Footer Top
+  footer_bottom: Footer Bottom
+libraries-extend:
+  user/drupal.user:
+    - opl_theme/user
+  core/drupal.dropbutton:
+    - opl_theme/dropbutton
+  core/drupal.dialog:
+    - opl_theme/dialog
+  file/drupal.file:
+    - opl_theme/file
+  core/drupal.progress:
+    - opl_theme/progress
+description: ''
+core_version_requirement: ^11
+generator: 'starterkit_theme:11.0.7'

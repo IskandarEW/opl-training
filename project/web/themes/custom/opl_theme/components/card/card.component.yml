@@ -1,0 +1,18 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json'
+name: Card
+status: stable
+props:
+  type: object
+  properties:
+    card_title:
+      type: string
+      title: Card title
+    card_description:
+      type: string
+      title: Card description
+    card_image:
+      type: object
+      title: Card title
+    card_link:
+      type: string
+      title: Card title

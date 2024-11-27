@@ -1,0 +1,23 @@
+{% set classes = [
+    'opl_card',
+    'flex flex-col md:flex-row gap-3',
+    'py-8 px-10',
+    'bg-slate-300',
+    'rounded-lg',
+    'mb-20',
+]%}
+
+<div {{ attributes.addClass(classes) }}>
+    <div class="opl_card__image">
+        {{ card_image }}
+    </div>
+    <div class="opl_card__title">
+        {{ card_title }}
+    </div>
+    <div class="opl_card__description">
+        {{ card_description }}
+    </div>
+    <div class="opl_card__cta">
+        {{ card_link }}
+    </div>
+</div>
